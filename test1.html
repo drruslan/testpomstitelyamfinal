@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<h2>1.Кто изображен на картинке?</h2>
+<img src="sokol.jpg"><br>
+<input type="radio" name="vopros1" value="1">Тони Старк<br>
+<input type="radio" name="vopros1" value="2">Капитан Америка<br>
+<input type="radio" name="vopros1" value="3">Соколиный глаз
+<h2>2.Cколько всего камней Бесконечностей?</h2>
+<input type="radio" name="vopros2" value="1">5<br>
+<input type="radio" name="vopros2" value="2">6<br>
+<input type="radio" name="vopros2" value="3">7
+<h2>3.В какой год отправились Черная Вдова и Соколиный глаз?</h2>
+<input type="radio" name="vopros3" value="1">2014<br>
+<input type="radio" name="vopros3" value="2">2012<br>
+<input type="radio" name="vopros3" value="3">2019
+<h2>4.Кто изображен на картинке?</h2>
+<img src="govard.jpg"><br>
+<input type="radio" name="vopros4" value="1">Стэн ли<br>
+<input type="radio" name="vopros4" value="2">Отец Тони Старка<br>
+<input type="radio" name="vopros4" value="3">Капитан Америка в старости
+<h2>5.Сколько щелчков с полной перчаткой было сделано за фильм?</h2>
+<input type="radio" name="vopros5" value="1">2<br>
+<input type="radio" name="vopros5" value="2">3<br>
+<input type="radio" name="vopros5" value="3">1
+<h2>6.Из какого года прилетел Танос на финальную битву?</h2>
+<input type="radio" name="vopros6" value="1">2023<br>
+<input type="radio" name="vopros6" value="2">2014<br>
+<input type="radio" name="vopros6" value="3">2012<br>
+<h2>7.Кто из этих героев смог поднять молот Тора?</h2>
+<input type="radio" name="vopros7" value="1"><img src="hukk.jpg" width="200"><br>
+<input type="radio" name="vopros7" value="2"><img src="ironman.jpg" width="150"><br>
+<input type="radio" name="vopros7" value="3"><img src="kap.jpg" width="200">
+<h2>8.Что сказал Тони Старк, перед тем как щелкнуть пальцами?(В английской версии)</h2>
+<img src="iamironman.jpg" width="400"><br>
+<input type="radio" name="vopros8" value="1">And I Am Iron Man<br>
+<input type="radio" name="vopros8" value="2">I am groot<br>
+<input type="radio" name="vopros8" value="3">I am  inevitable<br>
+<button onclick="check()" style="width: 150px; height: 75px; font-size: 20px; color: white; background:darkred">Проверь результат</button>
+</body>
+<script>
+    function check() {
+        vopros1=document.getElementsByName('vopros1')
+        for (number=0;number<vopros1.length;number++){
+            if (number===2&&vopros1[number].checked){
+                vopros1=true
+                break
+            }
+        }
+         vopros2=document.getElementsByName('vopros2')
+        for (number=0;number<vopros2.length;number++){
+            if (number===1&&vopros2[number].checked){
+                vopros2=true
+                break
+            }
+        }
+         vopros3=document.getElementsByName('vopros3')
+        for (number=0;number<vopros3.length;number++){
+            if (number===0&&vopros3[number].checked){
+                vopros3=true
+                break
+            }
+        }
+         vopros4=document.getElementsByName('vopros4')
+        for (number=0;number<vopros4.length;number++){
+            if (number===1&&vopros4[number].checked){
+                vopros4=true
+                break
+            }
+        }
+         vopros5=document.getElementsByName('vopros5')
+        for (number=0;number<vopros5.length;number++){
+            if (number===0&&vopros5[number].checked){
+                vopros5=true
+                break
+            }
+        }
+         vopros6=document.getElementsByName('vopros6')
+        for (number=0;number<vopros6.length;number++){
+            if (number===1&&vopros6[number].checked){
+                vopros6=true
+                break
+            }
+        }
+         vopros7=document.getElementsByName('vopros7')
+        for (number=0;number<vopros7.length;number++){
+            if (number===2&&vopros7[number].checked){
+                vopros7=true
+                break
+            }
+        }
+         vopros8=document.getElementsByName('vopros8')
+        for (number=0;number<vopros8.length;number++){
+            if (number===0&&vopros8[number].checked){
+                vopros8=true
+                break
+            }
+        }
+        if (vopros1===true&&vopros2===true&&vopros3===true&&vopros4===true&&vopros5===true&&vopros6===true&&vopros7===true&&vopros8===true) {
+            alert("Ты красавчик, и можешь считать себя настоящим фанатом Марвел, целую 3000 раз!))")
+        }else{
+            alert("Беги смотреть фильм!!!! Ты не пожалеешь")
+            }
+
+    }
+
+</script>
+</html>
